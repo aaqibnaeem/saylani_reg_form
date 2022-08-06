@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Registeration Form</title>
+</head>
+<style>
+    .form-container {
+        width: 60%;
+        background-color: lightgrey;
+        line-height: 40px;
+    }
+</style>
+
+<body>
+    <center>
+        <div class="main">
+            <div class="banner-container">
+                <img src="./Saylani.jpg" alt="Saylani-Banner" class="banner-img" height="150" width="300">
+            </div>
+
+            <div class="heading">
+                <h1>Saylani Online Academy</h1>
+            </div>
+
+            <div class="form-container">
+                <h2>Student Registeration Form</h2>
+
+                <form action="./success.html" method="get">
+                    <!-- *post* method is more secure than *get*, but I used *get* to check data on submission -->
+                    <table>
+                        <tr class="name">
+                            <td width="150"><label for="name">Name : </label></td>
+                            <td><input type="text" name="name" id="name" size="50" placeholder="Name" required></td>
+                        </tr>
+                        <tr class="fathername">
+                            <td width="150"><label for="fname">Father Name : </label></td>
+                            <td><input type="text" name="fname" id="fname" size="50" placeholder="Father name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="150"><label for="pass">Password : </label></td>
+                            <td><input type="password" name="pass" id="pass" size="50" placeholder="*******" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="150"><label for="addr">Address : </label></td>
+                            <td><textarea name="addr" id="addr" cols="44" rows="5" placeholder="Address"
+                                    required></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gender : </td>
+                            <td width="150">
+                                <label for="male">Male : </label>
+                                <input type="radio" name="gender" id="male" value="m">
+                                <label for="female">Female : </label>
+                                <input type="radio" name="gender" id="female" value="f">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Language : </td>
+                            <td width="150">
+                                <label for="urdu">Urdu : </label>
+                                <input type="checkbox" name="lang1" id="urdu" value="UR">
+                                <label for="english">English : </label>
+                                <input type="checkbox" name="lang2" id="english" value="En">
+                                <label for="Arabic">Arabic : </label>
+                                <input type="checkbox" name="lang3" id="Arabic" value="Ar">
+                                <label for="chinese">Chinese : </label>
+                                <input type="checkbox" name="lang4" id="chinese" value="Ch">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DOB : </td>
+                            <td><input type="date" name="dob" id="DOB" required></td>
+                        </tr>
+                        <tr>
+                            <td>Email : </td>
+                            <td><input type="email" name="email" id="email" placeholder="Email" size="50" required></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile : </td>
+                            <td><input type="number" name="contact" id="contact" placeholder="Contact" size="50"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>City : </td>
+                            <td>
+                                <select name="city" id="city">
+                                    <option value="Select City" disabled selected>Select Your City</option>
+                                    <option value="Hyderabad">Hyderabad</option>
+                                    <option value="Karachi">Karachi</option>
+                                    <option value="Faisalabad">Faisalabad</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hobbies : </td>
+                            <td>
+                                <select name="Hobbies" id="city" multiple>
+                                    <option value="Cricket" selected>Cricket</option>
+                                    <option value="Football">Football</option>
+                                    <option value="Hockey">Hockey</option>
+                                    <option value="Tennis">Tennis</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Picture Upload : </td>
+                            <td><input type="file" name="profilepic" id="profiepic"></td>
+                            <!-- <td><input type="submit" name="upload" id="upload"></td> -->
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center"><input type="submit" name="submit" id="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <p>Code by : Aqib Naeem Akhtar 71305</p>
+    </center>
+</body>
+
+</html>
